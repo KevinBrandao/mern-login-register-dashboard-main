@@ -20,7 +20,7 @@ const Login = () => {
 
     const loginUser = (e) => {
         e.preventDefault();
-        Axios.post('http://localhost:3002/login', {
+        Axios.post('https://mern-login-register-dashboard-main.onrender.com/login', {
             LoginUserName: loginUserName,
             LoginPassword: loginPassword
         }).then((response) => {
